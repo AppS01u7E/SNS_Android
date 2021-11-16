@@ -39,7 +39,7 @@
         android:id="@+id/textView"
         android:layout_width="74dp"
         android:layout_height="22dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/notosansbold"
         android:gravity="center"
         android:includeFontPadding="false"
