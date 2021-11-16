@@ -1,4 +1,4 @@
-package com.example.sns_super_android.chat
+package com.example.sns_super_android.chat.makechat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

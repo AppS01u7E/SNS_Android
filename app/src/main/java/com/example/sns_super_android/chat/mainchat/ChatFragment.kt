@@ -1,4 +1,4 @@
-package com.example.sns_super_android.chat
+package com.example.sns_super_android.chat.mainchat
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
