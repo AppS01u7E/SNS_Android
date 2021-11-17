@@ -41,8 +41,8 @@ class FindChatFragment : Fragment() {
                 else{
                     findchat_Xbtn.visibility = View.INVISIBLE
                 }
-                while (findchat_edit.length()>=25){
-                    Toast.makeText(activity,"채팅 이름은 최대 25글자 입니다",Toast.LENGTH_SHORT).show()
+                if(findchat_edit.length()>=25){
+                    Toast.makeText(activity,"채팅 제목은 최대 25자 입니다",Toast.LENGTH_SHORT).show()
                 }
             }
 
