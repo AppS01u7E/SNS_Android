@@ -6,4 +6,263 @@
     android:layout_height="match_parent"
     tools:context=".soom.postsoom.PostSoomActivity">
 
+    <Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:contentInsetStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/notosansbold"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Post"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/post_soom_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/ic_baseline_navigate_before_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="134dp"
+        android:layout_height="23dp"
+        android:fontFamily="@font/notosansbold"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="false"
+        android:text="영어 수행평가 안내"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="35dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/notosansregular"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="false"
+        android:text="1학년 3반"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/postdot"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="75dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/notosansregular"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="false"
+        android:text="2021.11.7  16:00:35"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/postdot"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:layout_width="42dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/notosansregular"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="false"
+        android:text="조회수 15"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/postuser"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="81dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/notosansregular"
+        android:gravity="start|center_vertical"
+        android:includeFontPadding="false"
+        android:text="영어_윤수영 선생님"
+        android:textColor="@color/black"
+        android:textSize="8dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9E9C9C"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/view5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosansregular"
+            android:gravity="start"
+            android:includeFontPadding="false"
+            android:text="리\n스\n트\n아ㅏ\n\n\n\n\n\n\n\n\n\n\n\n\\n\n\잉"
+            android:textColor="@color/black"
+            android:textSize="11dp" />
+    </ScrollView>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#9E9C9C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="27dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/notosansregular"
+        android:includeFontPadding="false"
+        android:text="댓글 3"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="e\ne\ne\n\n\n\n\n\n\n\n\r\n\n\n\n\n\n\n\nn\nddddd\n\n\n\n\nn\n\ndddddddd\n\n\n\nddd"/>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="50dp"
+        android:background="#9E9C9C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:weightSum="7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toBottomOf="@+id/view7" >
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/postsoomedit"
+            android:layout_gravity="center_vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EBEBEB"
+                android:hint="채팅을 입력해주세요."
+                android:textSize="12dp"
+                android:fontFamily="@font/notosansregular"
+                android:includeFontPadding="false"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="start|center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/postsendbtn"
+            android:text="전송"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:fontFamily="@font/notosansbold"
+            android:includeFontPadding="false"
+            />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
