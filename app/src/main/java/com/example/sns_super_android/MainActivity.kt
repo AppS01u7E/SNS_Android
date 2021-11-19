@@ -3,7 +3,6 @@ package com.example.sns_super_android
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.sns_super_android.chat.mainchat.ChatFragment
-import com.example.sns_super_android.mypage.MyPageFragment
 import com.example.sns_super_android.soom.mainsoom.SoomFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -18,9 +17,6 @@ class MainActivity : AppCompatActivity() {
         soomBtn.setOnClickListener {
             tran(2)
         }
-        mypageBtn.setOnClickListener {
-            tran(3)
-        }
     }
 
     private fun tran(num:Int){
@@ -31,9 +27,6 @@ class MainActivity : AppCompatActivity() {
             }
             2->{
                 transaction.replace(R.id.main, SoomFragment()).commit()
-            }
-            3->{
-                transaction.replace(R.id.main,MyPageFragment()).commit()
             }
         }
     }
