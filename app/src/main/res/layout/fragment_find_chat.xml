@@ -75,7 +75,7 @@
 
         <ImageButton
             android:id="@+id/findchat_Xbtn"
-            android:layout_width="0dp"
+            android:layout_width="3dp"
             android:layout_height="25dp"
             android:layout_weight="4"
             android:layout_gravity="center_vertical"
@@ -83,7 +83,7 @@
             android:background="@drawable/ic_baseline_close_24"/>
         <ImageButton
             android:id="@+id/findchat_Searchbtn"
-            android:layout_width="0dp"
+            android:layout_width="3dp"
             android:layout_height="30dp"
             android:layout_weight="5"
             android:layout_gravity="center_vertical"
