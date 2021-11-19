@@ -2,11 +2,9 @@ package com.example.sns_super_android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.sns_super_android.chat.findchat.FindChatFragment
 import com.example.sns_super_android.chat.mainchat.ChatFragment
-import com.example.sns_super_android.chat.makechat.MakeChatActivity
 import com.example.sns_super_android.mypage.MyPageFragment
-import com.example.sns_super_android.soom.SoomFragment
+import com.example.sns_super_android.soom.mainsoom.SoomFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,10 +27,10 @@ class MainActivity : AppCompatActivity() {
         val transaction = supportFragmentManager.beginTransaction()
         when(num){
             1->{
-                transaction.replace(R.id.main,FindChatFragment()).commit()
+                transaction.replace(R.id.main,ChatFragment()).commit()
             }
             2->{
-                transaction.replace(R.id.main,SoomFragment()).commit()
+                transaction.replace(R.id.main, SoomFragment()).commit()
             }
             3->{
                 transaction.replace(R.id.main,MyPageFragment()).commit()

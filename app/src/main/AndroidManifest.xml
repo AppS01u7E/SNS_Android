@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SNS_Super_Android">
-    <activity android:name=".chat.makechat.MakeChatActivity"></activity>
+        <activity android:name=".soom.postsoom.PostSoomActivity"></activity>
+        <activity android:name=".soom.detailsoom.DetailSoomActivity" />
+        <activity android:name=".soom.writesoom.WriteSoomActivity" />
+        <activity android:name=".soom.makesoom.MakeSoomActivity" />
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="adjustNothing"
-            >
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
-                <action
-                    android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
