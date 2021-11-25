@@ -4,12 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".soom.findsoom.FindSoomFragment">
 
+    <ImageButton
+        android:id="@+id/findsoom_imageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/soomimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
     <Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/soomToolBar"
         android:layout_width="match_parent"
         android:layout_height="37dp"
+        android:background="@color/white"
         android:contentInsetStart="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,7 +30,6 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
             <TextView
                 android:layout_width="70dp"
                 android:layout_height="30dp"
@@ -35,87 +46,70 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </Toolbar>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="74dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/notosansbold"
-        android:gravity="center"
-        android:includeFontPadding="false"
-        android:text="SOOM 찾기"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
     <LinearLayout
         android:id="@+id/findchat_linear"
         android:layout_width="0dp"
         android:layout_height="32dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectangle_2"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
         android:orientation="horizontal"
-        android:weightSum="60">
+        android:weightSum="60"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/findsoom_imageBtn">
+
         <EditText
             android:id="@+id/findsoom_edit"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
             android:layout_weight="49"
             android:background="#00ff0000"
-            android:fontFamily="@font/notosansmidium"
-            android:includeFontPadding="false"
-            android:maxLength="25"
             android:hint="검색"
-            android:textSize="14dp"
-            android:layout_gravity="left"
+            android:maxLength="25"
             android:singleLine="true"
-            android:layout_marginLeft="15dp"/>
-
+            android:textSize="14dp" />
 
         <ImageButton
             android:id="@+id/findsoom_Xbtn"
-            android:layout_width="3dp"
+            android:layout_width="0dp"
             android:layout_height="25dp"
-            android:layout_weight="4"
             android:layout_gravity="center_vertical"
-            android:visibility="invisible"
-            android:background="@drawable/ic_baseline_close_24"/>
+            android:layout_weight="4"
+            android:background="@drawable/ic_baseline_close_24"
+            android:visibility="invisible" />
 
         <ImageButton
-            android:id="@+id/findsoom_Search"
-            android:layout_width="3dp"
+            android:id="@+id/findsoom_Searchbtn"
+            android:layout_width="0dp"
             android:layout_height="30dp"
-            android:layout_weight="5"
             android:layout_gravity="center_vertical"
-            android:background="@drawable/ic_baseline_search_24"
-            />
+            android:layout_weight="5"
+            android:background="@drawable/ic_baseline_search_24" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintBottom_toTopOf="@+id/guideline25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/findchat_linear" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/findsoom_fab4"
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:src="@drawable/soommakebtn"
-        app:fabCustomSize="42dp"
         android:backgroundTint="#9DC6FF"
+        android:src="@drawable/soommakebtn"
         app:borderWidth="0dp"
+        app:fabCustomSize="42dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline25"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/findsoom_fab3"
@@ -123,12 +117,12 @@
         android:layout_height="42dp"
         android:backgroundTint="#9DC6FF"
         android:src="@drawable/soomwritebtn"
-        app:fabCustomSize="42dp"
         app:borderWidth="0dp"
+        app:fabCustomSize="42dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline25"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/findsoom_fab2"
@@ -136,46 +130,44 @@
         android:layout_height="42dp"
         android:backgroundTint="#9DC6FF"
         android:src="@drawable/soomlistbtn"
-        app:fabCustomSize="42dp"
         app:borderWidth="0dp"
+        app:fabCustomSize="42dp"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline25"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/findsoom_fab1"
         android:layout_width="56dp"
         android:layout_height="56dp"
-        android:src="@drawable/findchatmenuxml"
         android:backgroundTint="#9DC6FF"
+        android:src="@drawable/findchatmenuxml"
         app:borderWidth="0dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
-
+        app:layout_constraintBottom_toTopOf="@+id/guideline25"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
+        android:id="@+id/guideline26"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
+        android:id="@+id/guideline27"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.95" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
+        android:id="@+id/guideline25"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.93" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

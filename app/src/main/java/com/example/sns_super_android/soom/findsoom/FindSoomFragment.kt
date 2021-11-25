@@ -27,6 +27,7 @@ class FindSoomFragment : Fragment() {
 
     private val TAG = "FindSoomFragment"
     var isFabOpen = false
+    var show = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +42,8 @@ class FindSoomFragment : Fragment() {
         val findsoom_fab4:FloatingActionButton = rootview.findViewById(R.id.findsoom_fab4)
         val findsoom_edit:EditText = rootview.findViewById(R.id.findsoom_edit)
         val findsoom_Xbtn:ImageButton = rootview.findViewById(R.id.findsoom_Xbtn)
-        val findsoom_Search:ImageButton = rootview.findViewById(R.id.findsoom_Search)
+        val findsoom_Searchbtn:ImageButton = rootview.findViewById(R.id.findsoom_Searchbtn)
+        val findsoom_imageBtn : ImageButton = rootview.findViewById(R.id.findsoom_imageBtn)
 
 
         findsoom_edit.addTextChangedListener(object : TextWatcher {
@@ -65,6 +67,10 @@ class FindSoomFragment : Fragment() {
             }
 
         })
+
+        findsoom_imageBtn.setOnClickListener {
+            showToobars()
+        }
 
         findsoom_Xbtn.setOnClickListener {
             findsoom_edit.setText("")
@@ -104,6 +110,18 @@ class FindSoomFragment : Fragment() {
             ObjectAnimator.ofFloat(findsoom_fab4,"translationY",-600f).apply { start() }
             findsoom_fab1.setImageResource(R.drawable.bigx)
             true
+        }
+    }
+
+    private fun showToobars(){
+        if(show){
+            soomToolBar.visibility = View.INVISIBLE
+            soomToolBar.animate().translationY(0f).withLayer()
+            show = false
+        }else{
+            soomToolBar.visibility = View.VISIBLE
+            soomToolBar.animate().translationY(1f).withLayer()
+            show = true
         }
     }
 
