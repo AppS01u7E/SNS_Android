@@ -1,23 +1,19 @@
-package com.example.sns_super_android.soom.mainsoom
+package com.example.sns_super_android.ui.soom.mainsoom
 
 import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
-import android.service.controls.actions.FloatAction
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.fragment.app.FragmentTransaction
 import com.example.sns_super_android.R
-import com.example.sns_super_android.soom.findsoom.FindSoomFragment
-import com.example.sns_super_android.soom.makesoom.MakeSoomActivity
-import com.example.sns_super_android.soom.postsoom.PostSoomActivity
-import com.example.sns_super_android.soom.writesoom.WriteSoomActivity
+import com.example.sns_super_android.ui.soom.findsoom.FindSoomFragment
+import com.example.sns_super_android.ui.soom.makesoom.MakeSoomActivity
+import com.example.sns_super_android.ui.soom.postsoom.PostSoomActivity
+import com.example.sns_super_android.ui.soom.writesoom.WriteSoomActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.fragment_chat.*
-import kotlinx.android.synthetic.main.fragment_find_soom.*
 import kotlinx.android.synthetic.main.fragment_soom.*
 
 class SoomFragment : Fragment() {

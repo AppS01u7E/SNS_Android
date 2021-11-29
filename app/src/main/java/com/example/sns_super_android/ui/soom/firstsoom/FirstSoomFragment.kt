@@ -1,4 +1,4 @@
-package com.example.sns_super_android.soom.firstsoom
+package com.example.sns_super_android.ui.soom.firstsoom
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,4 +1,4 @@
-package com.example.sns_super_android.soom.makesoom
+package com.example.sns_super_android.ui.soom.makesoom
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

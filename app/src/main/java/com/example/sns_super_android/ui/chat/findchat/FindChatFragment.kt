@@ -1,6 +1,5 @@
-package com.example.sns_super_android.chat.findchat
+package com.example.sns_super_android.ui.chat.findchat
 
-import android.animation.ObjectAnimator
 import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.text.Editable
@@ -11,13 +10,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import androidx.core.widget.addTextChangedListener
 import com.example.sns_super_android.R
-import com.example.sns_super_android.chat.mainchat.ChatFragment
-import com.example.sns_super_android.soom.findsoom.FindSoomFragment
+import com.example.sns_super_android.ui.chat.mainchat.ChatFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.fragment_find_chat.*
-import org.w3c.dom.Text
 
 class FindChatFragment : Fragment() {
 

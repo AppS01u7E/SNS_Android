@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SNS_Super_Android">
-        <activity android:name=".soom.postsoom.PostSoomActivity"></activity>
-        <activity android:name=".soom.detailsoom.DetailSoomActivity" />
-        <activity android:name=".soom.writesoom.WriteSoomActivity" />
-        <activity android:name=".soom.makesoom.MakeSoomActivity" />
+        <activity android:name="com.example.sns_super_android.ui.soom.postsoom.PostSoomActivity"></activity>
+        <activity android:name="com.example.sns_super_android.ui.soom.detailsoom.DetailSoomActivity" />
+        <activity android:name="com.example.sns_super_android.ui.soom.writesoom.WriteSoomActivity" />
+        <activity android:name="com.example.sns_super_android.ui.soom.makesoom.MakeSoomActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

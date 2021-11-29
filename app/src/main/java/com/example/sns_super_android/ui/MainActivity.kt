@@ -1,9 +1,10 @@
-package com.example.sns_super_android
+package com.example.sns_super_android.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.sns_super_android.chat.mainchat.ChatFragment
-import com.example.sns_super_android.soom.mainsoom.SoomFragment
+import com.example.sns_super_android.R
+import com.example.sns_super_android.ui.chat.mainchat.ChatFragment
+import com.example.sns_super_android.ui.soom.mainsoom.SoomFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

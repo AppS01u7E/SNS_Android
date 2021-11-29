@@ -1,18 +1,13 @@
-package com.example.sns_super_android.chat.mainchat
+package com.example.sns_super_android.ui.chat.mainchat
 
-import android.animation.ObjectAnimator
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.sns_super_android.R
-import com.example.sns_super_android.chat.findchat.FindChatFragment
-import com.example.sns_super_android.soom.findsoom.FindSoomFragment
+import com.example.sns_super_android.ui.chat.findchat.FindChatFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.fragment_chat.*
-import kotlinx.android.synthetic.main.fragment_find_chat.*
 
 class ChatFragment : Fragment() {
 

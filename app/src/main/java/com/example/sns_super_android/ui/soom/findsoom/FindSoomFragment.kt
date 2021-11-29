@@ -1,12 +1,10 @@
-package com.example.sns_super_android.soom.findsoom
+package com.example.sns_super_android.ui.soom.findsoom
 
 import android.animation.ObjectAnimator
-import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -15,11 +13,10 @@ import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
 import com.example.sns_super_android.R
-import com.example.sns_super_android.soom.mainsoom.SoomFragment
-import com.example.sns_super_android.soom.makesoom.MakeSoomActivity
-import com.example.sns_super_android.soom.writesoom.WriteSoomActivity
+import com.example.sns_super_android.ui.soom.mainsoom.SoomFragment
+import com.example.sns_super_android.ui.soom.makesoom.MakeSoomActivity
+import com.example.sns_super_android.ui.soom.writesoom.WriteSoomActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.fragment_find_chat.*
 import kotlinx.android.synthetic.main.fragment_find_soom.*
 
 
